@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_bottom_margin">
+
+        <TextView
+            android:text="@string/player1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/namePlayer1"
+            android:layout_weight="1"
+            android:layout_gravity="left"/>
+
+        <TextView
+            android:text="@string/initialScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scorePlayer1"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarPlayer1"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        android:layout_marginBottom="@dimen/layout_bottom_margin"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_bottom_margin">
+
+        <TextView
+            android:text="@string/player2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/namePlayer2"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="@string/initialScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scorePlayer2"
+            android:layout_weight="1"
+            android:gravity="right"/>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarPlayer2"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/one"
+        android:id="@+id/diceImage"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:text="@string/player1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerName"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/layout_bottom_margin"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_bottom_margin">
+
+        <TextView
+        android:text="@string/acumulatedScoreString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acumulatedString"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+        <TextView
+            android:text="@string/initialScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/acumulatedScore"
+            android:layout_weight="1"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <Button
+        android:text="@string/startP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startTurn"
+        android:layout_marginBottom="@dimen/layout_bottom_margin"
+        android:layout_gravity="center"
+        android:onClick="startTurn"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/roll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rollDice"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:onClick="rollDice"/>
+
+        <Button
+            android:text="@string/take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/takeScore"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_vertical"
+            android:onClick="takeScore"/>
+    </LinearLayout>
+
+</LinearLayout>
