@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dices</string>
+    <string name="player1">Player 1</string>
+    <string name="player2">Player 2</string>
+    <string name="initialScore">0</string>
+    <string name="acumulatedScoreString">Accumulated score: </string>
+    <string name="startP1">Start playing Player 1</string>
+    <string name="startP2">Start playing Player 2</string>
+    <string name="roll">Roll</string>
+    <string name="take">Take</string>
+    <string name="win1">Player 1 wins</string>
+    <string name="win2">Player 2 wins</string>
+    <string name="playAgain">Do yo want to play again?</string>
+    <string name="positiveButton">Yes</string>
+    <string name="negativeButton">No</string>
+</resources>

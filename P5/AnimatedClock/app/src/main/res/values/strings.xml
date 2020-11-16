@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AnimatedClock</string>
+    <string name="sensor_error">The device does not have the sensor required for this application</string>
+</resources>

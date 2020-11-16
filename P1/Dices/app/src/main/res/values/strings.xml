@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Dices</string>
+    <string name="player1">Jugador 1</string>
+    <string name="player2">Jugador 2</string>
+    <string name="initialScore">0</string>
+    <string name="acumulatedScoreString">Acumulado en el turno: </string>
+    <string name="startP1">Comienza el turno el Jugador 1</string>
+    <string name="startP2">Comienza el turno el Jugador 2</string>
+    <string name="roll">Tirar</string>
+    <string name="take">Recoger</string>
+    <string name="win1">Gana el Jugador 1</string>
+    <string name="win2">Gana el Jugador 2</string>
+    <string name="playAgain">¿Desea volver a jugar?</string>
+    <string name="positiveButton">Si</string>
+    <string name="negativeButton">No</string>
+</resources>
